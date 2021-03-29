@@ -26,29 +26,30 @@ public:
 
 };
 // :: scope operator, 
-    double complex::getReal() const{
-        //real = 0;
-        return real;
 
-    }
-    double complex::getImag() const{
-        return imag;
+double complex::getReal() const{
+    //real = 0;
+    return real;
+}
+double complex::getImag() const{
+    return imag;
+}
+void complex::setReal(double param){
+    real = param;
+} 
 
+void complex::setImag(double param){
+    imag = param;
+}
+
+void complex::print() const{
+    if(imag>=0){
+        cout<<real <<" + "<<imag<<"j"<<endl;
+    }else{
+        cout<<real <<" - "<<-imag<<"j"<<endl;
     }
-    void complex::setReal(double param){
-        real = param;
-    } 
-    void complex::setImag(double param){
-        imag = param;
-    }
-    void complex::print() const{
-        if(imag>=0){
-            cout<<real <<" + "<<imag<<"j"<<endl;
-        }else{
-            cout<<real <<" - "<<-imag<<"j"<<endl;
-        }
         
-    }
+}
 
 
 complex::complex(/* args */)

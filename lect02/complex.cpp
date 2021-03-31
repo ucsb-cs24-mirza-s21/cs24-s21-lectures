@@ -52,14 +52,17 @@ void complex::print() const{
         
 }
 
-complex::complex(double re, double im)
+complex::complex(double re, double im):real(re), imag(im) //initializer list
+// initializer list must be used when member variables are constant
 {
     //default is an empty function
     // called when the object is created
+    /*
     cout<<" Hi! I just created and my value is "<<endl;
     print();
     real = re;
     imag = im;
+    */
 }
 
 complex::~complex()
@@ -71,6 +74,16 @@ complex::~complex()
     print(); 
     cout<<" Bye bye! "<<endl; 
 }
+double sumArray(int* a, int len){
+    int result = 0;
+    for (int i = 0; i < len; i++){
+        result+=a[i]; // *(a+i)
+        cout<<"Element "<<i<< " is "<< *(a+i)<<endl;
+    }
+    return result;
+}
+
+
 
 int main(int argc, char const *argv[])
 {
@@ -78,7 +91,14 @@ int main(int argc, char const *argv[])
     complex c1 {10, -20}; // C++11 notation
     complex c2 {10, 20}; //constructor called
     complex c3;
+    complex* ptr; //declare
+    ptr = &c3; //assign
+    ptr->getImag(); // access member functions of c3 using ptr
+    ptr = &c2;
+    complex* p = &c3;
     int arr[3] {1, 2, 3};
+    cout<<sumArray(arr, 3)<<endl; //pass the starting location of array
+    // instead of copying over all the elements (more efficient)
     //c1.print();
     cout<<"In the middle"<<endl;
     double result = c1.getImag();

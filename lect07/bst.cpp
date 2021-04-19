@@ -5,7 +5,8 @@ using namespace std;
 class bst{
    public:
       bst(){root = 0;}
-      ~bst(){}
+	  //incorrect destructor
+      ~bst(){ delete root;}
       bool insert(int value); // return false if the value already exists
       bool search(int value) const;
       int min() const;
@@ -28,11 +29,13 @@ class bst{
 
 };
 bool bst::insert(int value){
+	//incomplete function
     root = new bstNode{value};
     return true;
 }
 
 void bst::print() const{
+	//incomplete function
     cout<< root->data<<endl;
 }
 
@@ -40,7 +43,7 @@ int main(){
     bst b1;
     b1.insert(10);
     b1.print();
-    int *b2=nullptr;
-    cout<<*b2;
+	int *p = nullptr;
+	cout<<*p;
    return 0;
 }

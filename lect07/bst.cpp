@@ -40,5 +40,7 @@ int main(){
     bst b1;
     b1.insert(10);
     b1.print();
+    bst * b2=nullptr;
+    cout<<*b2;
    return 0;
 }

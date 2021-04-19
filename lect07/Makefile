@@ -1,6 +1,6 @@
 # Makefile
 bst: bst.cpp
-	g++ --std=c++11 bst.cpp -o bst
+	g++ -g --std=c++11 bst.cpp -o bst
 
 
 clean:

@@ -25,22 +25,18 @@ class bst{
             }
       };
       bstNode* root;
+      int x;
 
 };
 bool bst::insert(int value){
-    root = new bstNode{value};
-    return true;
+	return true;
 }
 
 void bst::print() const{
-    cout<< root->data<<endl;
+   cout<<root->data<<endl;
 }
 
 int main(){
-    bst b1;
-    b1.insert(10);
-    b1.print();
-    int *b2=nullptr;
-    cout<<*b2;
+  
    return 0;
 }

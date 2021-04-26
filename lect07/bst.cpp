@@ -26,11 +26,9 @@ class bst{
             }
       };
       bstNode* root;
-      int x;
 
 };
 bool bst::insert(int value){
-<<<<<<< HEAD:lect07/oldbst.cpp
 	return true;
 }
 
@@ -40,7 +38,6 @@ void bst::print() const{
 
 int main(){
   
-=======
 	//incomplete function
     root = new bstNode{value};
     return true;
@@ -55,8 +52,5 @@ int main(){
     bst b1;
     b1.insert(10);
     b1.print();
-	int *p = nullptr;
-	cout<<*p;
->>>>>>> ad36c6005c187b5286e8d9de7b1e73b08d865328:lect07/bst.cpp
    return 0;
 }

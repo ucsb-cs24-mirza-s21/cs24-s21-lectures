@@ -26,7 +26,6 @@ class bst{
             }
       };
       bstNode* root;
-      int x;
 
 };
 bool bst::insert(int value){

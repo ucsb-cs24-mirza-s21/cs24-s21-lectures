@@ -19,10 +19,10 @@ void selectionSort(vector<T>& v){
             index = j;
          }
       }
+      // Running  time is not constant for the following three lines
       // We are calling the copy constructor and copy assignment
       // both of which iterate over all the keys of the tree
-      // Running  time is not constant for the following three lines
-      // depends on M (maximum size of the trees)
+      // Running time depends on M (maximum size of the trees)
       T tmp = v[i];
       v[i] = v[index];
       v[index]=tmp;

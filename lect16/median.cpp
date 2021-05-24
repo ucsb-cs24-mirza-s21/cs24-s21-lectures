@@ -15,8 +15,9 @@ int main(){
             left.push(elem);
         }else{
             if(left.size()>right.size()){
-                // insert larger of elem and left.top() into right PQ
-                // insert the other into the left PQ
+                // insert max(elem, left.top()) into right PQ
+                // insert min(elem, left.top()) into left PQ
+                // pop to make sure the difference in size is <=1
                 if(elem < left.top()){
                     right.push(left.top());
                     left.pop();

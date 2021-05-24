@@ -14,8 +14,8 @@ void selectionSort(vector<T>& v){
    int N = v.size();
    for(int i =0; i < N; i++){ 
       int index=i;
-      for(int j = i+1; j<N;j++){  
-         if(v[j].size()<v[index].size()){ 
+      for(int j = i+1; j< N;j++){  
+         if(v[j].size() < v[index].size()){ 
             index = j;
          }
       }

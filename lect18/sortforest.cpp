@@ -43,11 +43,11 @@ void print(vector<T>&v){
 
    }
    cout<<endl;
-
 }
+
 int main(){
    vector<set<int>> forest;
-   int N = 10000;
+   int N = 1000; // number of trees
    int M = 10000; // maximum number of keys in each tree 
    for(int i=0; i<N; i++){
       forest.push_back(set<int>{});

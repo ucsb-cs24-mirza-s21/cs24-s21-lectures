@@ -33,7 +33,7 @@ void selectionSort(vector<T>& v){
 template  <class T>
 void print(vector<T>&v){
     for(auto &tree: v){
-    cout<<"Size: "<< tree->size()<<endl;
+    cout<<"Size: "<< tree.size()<<endl;
     cout<<"Elements: "<<endl;
     for(auto key:tree){//inorder traversal
         cout<<key<<" ";

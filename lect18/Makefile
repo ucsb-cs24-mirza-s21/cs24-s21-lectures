@@ -14,3 +14,4 @@ sortforestfaster: sortforestfaster.cpp
 
 clean:
 	rm cmpclass sortforest
+
